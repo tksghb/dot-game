@@ -1,0 +1,54 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #4e454a;
+    overflow: hidden;
+}
+#header {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    background-color: #b4aeb1;
+}
+#header::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#scoreArea {
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+#score {
+    font-size: 20px;
+    font-weight: bold;
+}
+#speedArea {
+    width: 70%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+#slider {
+    width: 90%;
+}
+.dot {
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0.6;
+    transition: opacity 0.5s ease;
+}
+.dot:hover {
+    opacity: 1;
+}

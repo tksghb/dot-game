@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dot Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div id="scoreArea">
+            <div>Score:</div>
+            <div id="score">0</div>
+        </div>
+        <div id="speedArea">
+            <div>Speed: <span id="speed"></span>px/sec</div>
+            <div><input type="range" min="10" max="100" value="50" id="slider" oninput="setSpeed()"></div>
+        </div>
+    </div>
+    <div id="playingArea"></div>
+    <script src="index.js"></script>
+</body>
+</html>
